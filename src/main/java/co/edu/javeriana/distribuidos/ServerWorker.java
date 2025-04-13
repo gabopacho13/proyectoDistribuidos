@@ -34,28 +34,22 @@ public class ServerWorker implements Runnable{
             String[] partes = request.split(",");
             int numSalones = Integer.parseInt(partes[0]);
             int numLaboratorios = Integer.parseInt(partes[1]);
-
             // Reservar salones y laboratorios
             List<Salon> salonesReservados = Recursos.reservarSalones(numSalones-numLaboratorios);
             List<Aula> laboratoriosReservados = Recursos.reservarLaboratorios(numLaboratorios);
             String responseContent = "";
-            if (salonesReservados != null) {
-                responseContent = "Se le han reservado los salones:\n";
-                for (Salon salon : salonesReservados) {
-                    responseContent += salon.getId() + " ";
-                }
-            } else {
-                responseContent += "No hay suficientes salones disponibles. ";
-            }
-            if (laboratoriosReservados != null) {
-                responseContent += "\nSe le han reservado los laboratorios:\n";
+            if (laboratoriosReservados != null && salonesReservados != null) {
                 for (Aula laboratorio : laboratoriosReservados) {
-                    responseContent += laboratorio.getId() + " ";
+                    if (laboratorio instanceof Salon) {
+                        salonesReservados.add((Salon) laboratorio);
+                        laboratoriosReservados.remove(laboratorio);
+                    }
                 }
-            } else {
-                responseContent += "No hay suficientes laboratorios disponibles. ";
+                responseContent = getString(salonesReservados, laboratoriosReservados);
             }
-
+            else {
+                responseContent = "No hay suficientes recursos disponibles.";
+            }
             ZMsg response = new ZMsg();
             response.add(address); // Dirección del cliente
             response.add(responseContent.getBytes(ZMQ.CHARSET)); // Respuesta personalizada
@@ -68,5 +62,26 @@ public class ServerWorker implements Runnable{
             address.destroy();
         }
         ctx.destroy();
+    }
+
+    private static String getString(List<Salon> salonesReservados, List<Aula> laboratoriosReservados) {
+        String responseContent = "";
+        if (salonesReservados != null) {
+            responseContent = "Se le han reservado los salones:\n";
+            for (Salon salon : salonesReservados) {
+                responseContent += salon.getId() + " ";
+            }
+        } else {
+            responseContent += "No hay suficientes salones disponibles. ";
+        }
+        if (laboratoriosReservados != null) {
+            responseContent += "\nSe le han reservado los laboratorios:\n";
+            for (Aula laboratorio : laboratoriosReservados) {
+                responseContent += laboratorio.getId() + " ";
+            }
+        } else {
+            responseContent += "No hay suficientes laboratorios disponibles. ";
+        }
+        return responseContent;
     }
 }
