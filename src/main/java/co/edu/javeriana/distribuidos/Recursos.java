@@ -26,6 +26,13 @@ public class Recursos {
 
     public static synchronized List<Salon> reservarSalones(int numSalones) {
         List<Salon> reservados = new ArrayList<>();
+        int numSalonesFaltantes = numSalones;
+        if (numSalonesFaltantes <= 0) {
+            return reservados;
+        }
+        if (numSalonesFaltantes > NUM_SALONES) {
+            return null;
+        }
         while (lockSalones) {
             try {
                 Recursos.class.wait();
@@ -38,13 +45,13 @@ public class Recursos {
             if (salon.getDisponible()) {
                 reservados.add(salon);
                 salon.setDisponible(false);
-                numSalones--;
-                if (numSalones == 0) {
+                numSalonesFaltantes--;
+                if (numSalonesFaltantes == 0) {
                     break;
                 }
             }
         }
-        if (numSalones > 0) {
+        if (numSalonesFaltantes > 0) {
             for (Aula aula : reservados) {
                 aula.setDisponible(true);
             }
@@ -57,6 +64,13 @@ public class Recursos {
 
     public static synchronized List<Aula> reservarLaboratorios(int numLaboratorios) {
         List<Aula> reservados = new ArrayList<>();
+        int numLaboratoriosFaltantes = numLaboratorios;
+        if (numLaboratoriosFaltantes <= 0) {
+            return reservados;
+        }
+        if (numLaboratoriosFaltantes > NUM_SALONES+NUM_LABORATORIOS) {
+            return null;
+        }
         while (lockLaboratorios) {
             try {
                 Recursos.class.wait();
@@ -69,13 +83,13 @@ public class Recursos {
             if (laboratorio.getDisponible()) {
                 reservados.add(laboratorio);
                 laboratorio.setDisponible(false);
-                numLaboratorios--;
-                if (numLaboratorios == 0) {
+                numLaboratoriosFaltantes--;
+                if (numLaboratoriosFaltantes == 0) {
                     break;
                 }
             }
         }
-        if (numLaboratorios > 0) {
+        if (numLaboratoriosFaltantes > 0) {
             while (lockSalones) {
                 try {
                     Recursos.class.wait();
@@ -95,14 +109,14 @@ public class Recursos {
                     salon.setEsLaboratorio(true);
                     reservados.add(salon);
                     salon.setDisponible(false);
-                    numLaboratorios--;
-                    if (numLaboratorios == 0) {
+                    numLaboratoriosFaltantes--;
+                    if (numLaboratoriosFaltantes == 0) {
                         break;
                     }
                 }
             }
         }
-        if (numLaboratorios > 0) {
+        if (numLaboratoriosFaltantes > 0) {
             for (Aula aula : reservados) {
                 aula.setDisponible(true);
                 if (aula instanceof Salon){
@@ -115,5 +129,76 @@ public class Recursos {
         lockSalones = false;
         Recursos.class.notifyAll();
         return reservados.size()<numLaboratorios ? null : reservados;
+    }
+
+    public static synchronized void liberarSalones(List<Salon> salonesLiberados) {
+        while (lockLaboratorios) {
+            try {
+                Recursos.class.wait();
+            } catch (InterruptedException e) {
+                throw new RuntimeException("Error al liberar salones: ", e);
+            }
+        }
+        lockLaboratorios = true;
+        for (Salon salon : salonesLiberados) {
+            salon.setDisponible(true);
+        }
+        lockLaboratorios = false;
+        Recursos.class.notifyAll();
+    }
+
+    public static synchronized void liberarAulas(List<Aula> aulasLiberadas){
+        while (lockLaboratorios || lockSalones){
+            try {
+                Recursos.class.wait();
+            } catch (InterruptedException e) {
+                throw new RuntimeException("Error al liberar aulas: ", e);
+            }
+        }
+        lockLaboratorios = true;
+        lockSalones = true;
+        for (Aula aula : aulasLiberadas) {
+            aula.setDisponible(true);
+            if (aula instanceof Salon){
+                ((Salon) aula).setEsLaboratorio(false);
+            }
+        }
+        lockLaboratorios = false;
+        lockSalones = false;
+        Recursos.class.notifyAll();
+    }
+
+    public static synchronized int getSalonesDisponibles() {
+        int disponibles = 0;
+        while (lockSalones) {
+            try {
+                Recursos.class.wait();
+            } catch (InterruptedException e) {
+                throw new RuntimeException("Error al contar salones disponibles: ", e);
+            }
+        }
+        for (Salon salon : salones) {
+            if (salon.getDisponible()) {
+                disponibles++;
+            }
+        }
+        return disponibles;
+    }
+
+    public static synchronized int getLaboratoriosDisponibles() {
+        int disponibles = 0;
+        while (lockLaboratorios) {
+            try {
+                Recursos.class.wait();
+            } catch (InterruptedException e) {
+                throw new RuntimeException("Error al contar laboratorios disponibles: ", e);
+            }
+        }
+        for (Laboratorio laboratorio : laboratorios) {
+            if (laboratorio.getDisponible()) {
+                disponibles++;
+            }
+        }
+        return disponibles;
     }
 }

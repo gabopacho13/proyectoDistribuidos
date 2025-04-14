@@ -12,7 +12,7 @@ public class ClienteFacultades implements Runnable{
             client.connect("tcp://localhost:5570");
 
             // Enviar un mensaje al servidor
-            String mensaje = "10,5";
+            String mensaje = "50,20";
             client.send(mensaje.getBytes(ZMQ.CHARSET), 0);
 
             // Recibir la respuesta del servidor

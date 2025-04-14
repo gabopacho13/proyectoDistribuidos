@@ -9,10 +9,12 @@ public abstract class Aula implements Serializable {
 
     int id;
     Boolean disponible;
+    String facultadAsignada;
 
     public Aula(int id) {
         this.id = id;
         this.disponible = true;
+        this.facultadAsignada = "";
     }
 
     public void setId(int id) {
@@ -21,5 +23,9 @@ public abstract class Aula implements Serializable {
 
     public void setDisponible(Boolean disponible) {
         this.disponible = disponible;
+    }
+
+    public void setFacultadAsignada(String facultadAsignada) {
+        this.facultadAsignada = facultadAsignada;
     }
 }
