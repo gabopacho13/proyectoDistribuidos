@@ -36,11 +36,17 @@ public class ServerWorker implements Runnable{
 
             // Procesar el mensaje recibido
             String[] partes = request.split(",");
-            int numSalones = Integer.parseInt(partes[0]);
-            int numLaboratorios = Integer.parseInt(partes[1]);
+            if (partes.length != 4) {
+                System.out.println("El mensaje no tiene el formato correcto.");
+                continue;
+            }
+            String facultad = partes[0];
+            String semestre = partes[1];
+            int numSalones = Integer.parseInt(partes[2]);
+            int numLaboratorios = Integer.parseInt(partes[3]);
             // Reservar salones y laboratorios
-            List<Salon> salonesReservados = Recursos.reservarSalones(numSalones-numLaboratorios);
-            List<Aula> laboratoriosReservados = Recursos.reservarLaboratorios(numLaboratorios);
+            List<Salon> salonesReservados = Recursos.reservarSalones(numSalones-numLaboratorios, facultad);
+            List<Aula> laboratoriosReservados = Recursos.reservarLaboratorios(numLaboratorios, facultad);
             String responseContent = "";
             if (laboratoriosReservados != null && salonesReservados != null) {
                 List<Salon> salonesLaboratorios = new ArrayList<>();
