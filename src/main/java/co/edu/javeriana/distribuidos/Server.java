@@ -2,6 +2,7 @@ package co.edu.javeriana.distribuidos;
 
 import org.zeromq.*;
 import org.zeromq.ZMQ.Socket;
+import java.net.InetAddress;
 
 public class Server {
 
@@ -27,7 +28,8 @@ public class Server {
 
     public static void main(String[] args) throws Exception
     {
-        System.out.println("Servidor iniciado... esperando solicitudes de recursos.");
+        String ip = InetAddress.getLocalHost().getHostAddress();
+        System.out.println("Servidor iniciado en " + ip + "... esperando solicitudes de recursos.");
         Server server = new Server();
     }
 }
