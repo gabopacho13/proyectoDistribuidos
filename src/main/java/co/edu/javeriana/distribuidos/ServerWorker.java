@@ -25,7 +25,7 @@ public class ServerWorker implements Runnable{
             ZMsg msg = ZMsg.recvMsg(worker);
             System.out.println("El trabajador " + threadNbr + " ha recibido una solicitud...");
             if (msg == null) {
-                break; // Interrupted
+                continue; // Interrupted
             }
             ZFrame address = msg.pop();
             ZFrame content = msg.pop();
@@ -36,17 +36,18 @@ public class ServerWorker implements Runnable{
 
             // Procesar el mensaje recibido
             String[] partes = request.split(",");
-            if (partes.length != 4) {
+            if (partes.length != 5) {
                 System.out.println("El mensaje no tiene el formato correcto.");
                 continue;
             }
             String facultad = partes[0];
-            String semestre = partes[1];
-            int numSalones = Integer.parseInt(partes[2]);
-            int numLaboratorios = Integer.parseInt(partes[3]);
+            String programa = partes[1];
+            String semestre = partes[2];
+            int numSalones = Integer.parseInt(partes[3]);
+            int numLaboratorios = Integer.parseInt(partes[4]);
             // Reservar salones y laboratorios
-            List<Salon> salonesReservados = Recursos.reservarSalones(numSalones-numLaboratorios, facultad);
-            List<Aula> laboratoriosReservados = Recursos.reservarLaboratorios(numLaboratorios, facultad);
+            List<Salon> salonesReservados = Recursos.reservarSalones(numSalones-numLaboratorios, facultad, programa);
+            List<Aula> laboratoriosReservados = Recursos.reservarLaboratorios(numLaboratorios, facultad, programa);
             String responseContent = "";
             if (laboratoriosReservados != null && salonesReservados != null) {
                 List<Salon> salonesLaboratorios = new ArrayList<>();

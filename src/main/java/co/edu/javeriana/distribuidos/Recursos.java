@@ -24,7 +24,7 @@ public class Recursos {
         }
     }
 
-    public static synchronized List<Salon> reservarSalones(int numSalones, String facultad) {
+    public static synchronized List<Salon> reservarSalones(int numSalones, String facultad, String programa) {
         List<Salon> reservados = new ArrayList<>();
         int numSalonesFaltantes = numSalones;
         if (numSalonesFaltantes <= 0) {
@@ -46,6 +46,7 @@ public class Recursos {
                 reservados.add(salon);
                 salon.setDisponible(false);
                 salon.setFacultadAsignada(facultad);
+                salon.setProgramaAsignado(programa);
                 numSalonesFaltantes--;
                 if (numSalonesFaltantes == 0) {
                     break;
@@ -56,6 +57,7 @@ public class Recursos {
             for (Aula aula : reservados) {
                 aula.setDisponible(true);
                 aula.setFacultadAsignada("");
+                aula.setProgramaAsignado("");
             }
             reservados.clear();
         }
@@ -64,7 +66,7 @@ public class Recursos {
         return reservados.size()<numSalones ? null : reservados;
     }
 
-    public static synchronized List<Aula> reservarLaboratorios(int numLaboratorios, String facultad) {
+    public static synchronized List<Aula> reservarLaboratorios(int numLaboratorios, String facultad, String programa) {
         List<Aula> reservados = new ArrayList<>();
         int numLaboratoriosFaltantes = numLaboratorios;
         if (numLaboratoriosFaltantes <= 0) {
@@ -86,6 +88,7 @@ public class Recursos {
                 reservados.add(laboratorio);
                 laboratorio.setDisponible(false);
                 laboratorio.setFacultadAsignada(facultad);
+                laboratorio.setProgramaAsignado(programa);
                 numLaboratoriosFaltantes--;
                 if (numLaboratoriosFaltantes == 0) {
                     break;
@@ -100,6 +103,7 @@ public class Recursos {
                     for (Aula aula : reservados) {
                         aula.setDisponible(true);
                         aula.setFacultadAsignada("");
+                        aula.setProgramaAsignado("");
                     }
                     reservados.clear();
                     lockLaboratorios = false;
@@ -114,6 +118,7 @@ public class Recursos {
                     reservados.add(salon);
                     salon.setDisponible(false);
                     salon.setFacultadAsignada(facultad);
+                    salon.setProgramaAsignado(programa);
                     numLaboratoriosFaltantes--;
                     if (numLaboratoriosFaltantes == 0) {
                         break;
@@ -125,6 +130,7 @@ public class Recursos {
             for (Aula aula : reservados) {
                 aula.setDisponible(true);
                 aula.setFacultadAsignada("");
+                aula.setProgramaAsignado("");
                 if (aula instanceof Salon){
                     ((Salon) aula).setEsLaboratorio(false);
                 }
@@ -149,6 +155,7 @@ public class Recursos {
         for (Salon salon : salonesLiberados) {
             salon.setDisponible(true);
             salon.setFacultadAsignada("");
+            salon.setProgramaAsignado("");
         }
         lockLaboratorios = false;
         Recursos.class.notifyAll();
@@ -167,6 +174,7 @@ public class Recursos {
         for (Aula aula : aulasLiberadas) {
             aula.setDisponible(true);
             aula.setFacultadAsignada("");
+            aula.setProgramaAsignado("");
             if (aula instanceof Salon){
                 ((Salon) aula).setEsLaboratorio(false);
             }
