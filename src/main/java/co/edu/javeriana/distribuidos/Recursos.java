@@ -1,5 +1,7 @@
 package co.edu.javeriana.distribuidos;
 
+import co.edu.javeriana.distribuidos.Services.Aulas;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,14 +16,8 @@ public class Recursos {
     private static Boolean lockLaboratorios = false;
 
     public static synchronized void inicializarRecursos() {
-        salones = new ArrayList<>();
-        laboratorios = new ArrayList<>();
-        for (int i = 0; i < NUM_SALONES; i++) {
-            salones.add(new Salon(i+1));
-        }
-        for (int i = 0; i < NUM_LABORATORIOS; i++) {
-            laboratorios.add(new Laboratorio(i+1));
-        }
+        salones = Aulas.leerArchivoSalones();
+        laboratorios = Aulas.leerArchivoLaboratorios();
     }
 
     public static synchronized List<Salon> reservarSalones(int numSalones, String facultad, String programa) {

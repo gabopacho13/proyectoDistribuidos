@@ -1,0 +1,362 @@
+[
+  {
+    "id": 1,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 2,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 3,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 4,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 5,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 6,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 7,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 8,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 9,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 10,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 11,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 12,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 13,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 14,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 15,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 16,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 17,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 18,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 19,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 20,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 21,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 22,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 23,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 24,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 25,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 26,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 27,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 28,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 29,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 30,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 31,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 32,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 33,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 34,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 35,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 36,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 37,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 38,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 39,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 40,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 41,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 42,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 43,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 44,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 45,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 46,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 47,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 48,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 49,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 50,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 51,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 52,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 53,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 54,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 55,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 56,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 57,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 58,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 59,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  },
+  {
+    "id": 60,
+    "disponible": true,
+    "facultadAsignada": "",
+    "programaAsignado": ""
+  }
+]

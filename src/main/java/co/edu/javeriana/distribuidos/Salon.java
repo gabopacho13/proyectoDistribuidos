@@ -7,6 +7,10 @@ public class Salon extends Aula{
 
     private Boolean esLaboratorio;
 
+    public Salon() {
+        super();
+    }
+
     public Salon(int id) {
         super(id);
         this.esLaboratorio = false;

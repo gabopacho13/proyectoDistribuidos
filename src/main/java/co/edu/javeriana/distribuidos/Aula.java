@@ -12,6 +12,9 @@ public abstract class Aula implements Serializable {
     String facultadAsignada;
     String programaAsignado;
 
+    public Aula(){
+
+    }
     public Aula(int id) {
         this.id = id;
         this.disponible = true;
