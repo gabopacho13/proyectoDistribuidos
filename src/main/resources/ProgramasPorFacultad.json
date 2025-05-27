@@ -1,0 +1,72 @@
+{
+  "ciencias_sociales": [
+    "psicología",
+    "sociología",
+    "trabajo_social",
+    "antropología",
+    "comunicación"
+  ],
+  "ciencias_naturales": [
+    "biología",
+    "química",
+    "física",
+    "geología",
+    "ciencias_ambientales"
+  ],
+  "ingeniería": [
+    "ingeniería_civil",
+    "ingeniería_electrónica",
+    "ingeniería_de_sistemas",
+    "ingeniería_mecánica",
+    "ingeniería_industrial"
+  ],
+  "medicina": [
+    "medicina_general",
+    "enfermería",
+    "odontología",
+    "farmacia",
+    "terapia_física"
+  ],
+  "derecho": [
+    "derecho_penal",
+    "derecho_civil",
+    "derecho_internacional",
+    "derecho_laboral",
+    "derecho_constitucional"
+  ],
+  "artes": [
+    "bellas_artes",
+    "música",
+    "teatro",
+    "danza",
+    "diseño_gráfico"
+  ],
+  "educación": [
+    "educación_primaria",
+    "educación_secundaria",
+    "educación_especial",
+    "psicopedagogía",
+    "administración_educativa"
+  ],
+  "ciencias_económicas": [
+    "administración_de_empresas",
+    "contabilidad",
+    "economía",
+    "mercadotecnia",
+    "finanzas"
+  ],
+  "arquitectura": [
+    "arquitectura",
+    "urbanismo",
+    "diseño_de_interiores",
+    "paisajismo",
+    "restauración_de_patrimonio"
+  ],
+  "tecnología": [
+    "desarrollo_de_software",
+    "redes_y_telecomunicaciones",
+    "ciberseguridad",
+    "inteligencia_artificial",
+    "big_data"
+  ]
+}

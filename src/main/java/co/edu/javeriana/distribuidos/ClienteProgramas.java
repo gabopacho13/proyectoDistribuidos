@@ -2,6 +2,8 @@ package co.edu.javeriana.distribuidos;
 
 import org.zeromq.*;
 
+import java.nio.charset.StandardCharsets;
+
 public class ClienteProgramas implements Runnable{
 
     private String programa;
@@ -27,11 +29,11 @@ public class ClienteProgramas implements Runnable{
             System.out.println("la conexión con la facultad se ha realizado satisfactoriamente. Solicitando salones...");
             String mensaje = programa + "," + semestre + "," + numAulas + "," + numLaboratorios;
 
-            requester.send(mensaje.getBytes(ZMQ.CHARSET), 0);
+            requester.send(mensaje.getBytes(StandardCharsets.UTF_8), 0);
             ZMsg msg = ZMsg.recvMsg(requester);
             if (msg != null) {
                 ZFrame frame = msg.getLast(); // obtiene el último frame
-                String respuesta = frame != null ? frame.getString(ZMQ.CHARSET) : null;
+                String respuesta = frame != null ? frame.getString(StandardCharsets.UTF_8) : null;
 
                 System.out.println("Respuesta del servidor: " + respuesta);
                 msg.destroy();
@@ -41,7 +43,7 @@ public class ClienteProgramas implements Runnable{
 
     public static void main(String[] args) {
         if (args.length < 5){
-            System.out.println("modo de uso: mvn exec:java '-Dexec.mainClass=co.edu.javeriana.distribuidos.ClienteProgramas' '-Dexec.args=programa, semestre, numAulas(salones+labs), numLaboratorios, ipFacultad'");
+            System.out.println("modo de uso: mvn exec:java '-Dexec.mainClass=co.edu.javeriana.distribuidos.ClienteProgramas' '-Dexec.args=programa(separar palabras por \"_\") semestre numAulas(salones+labs) numLaboratorios ipFacultad'");
             return;
         }
         String programa = args[0];

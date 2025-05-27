@@ -3,6 +3,7 @@ package co.edu.javeriana.distribuidos;
 import org.zeromq.*;
 import org.zeromq.ZMQ.Socket;
 
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,12 +33,17 @@ public class ServerWorker implements Runnable{
             assert (content != null);
             msg.destroy();
 
-            String request = content.toString();
+            String request = new String(content.getData(), StandardCharsets.UTF_8);
 
             // Procesar el mensaje recibido
             String[] partes = request.split(",");
             if (partes.length != 5) {
-                System.out.println("El mensaje no tiene el formato correcto.");
+                ZMsg response = new ZMsg();
+                response.add(address); // Dirección del cliente
+                response.add(("El mensaje no tiene el formato correcto. Se recibieron " + partes.length + " parametros.").getBytes(ZMQ.CHARSET));
+                response.send(worker);
+                response.destroy();
+                address.destroy();
                 continue;
             }
             String facultad = partes[0];
