@@ -7,7 +7,6 @@ import java.net.InetAddress;
 public class Server {
 
     public Server(){
-        Recursos.inicializarRecursos();
         try (ZContext ctx = new ZContext()) {
             //  Frontend socket talks to clients over TCP
             Socket frontend = ctx.createSocket(SocketType.ROUTER);

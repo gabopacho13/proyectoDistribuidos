@@ -1,5 +1,6 @@
 package co.edu.javeriana.distribuidos;
 
+import co.edu.javeriana.distribuidos.Services.Aulas;
 import org.zeromq.*;
 import org.zeromq.ZMQ.Socket;
 
@@ -51,9 +52,29 @@ public class ServerWorker implements Runnable{
             String semestre = partes[2];
             int numSalones = Integer.parseInt(partes[3]);
             int numLaboratorios = Integer.parseInt(partes[4]);
+            if (!Recursos.verificarSalones(semestre) || !Recursos.verificarLaboratorios(semestre)) {
+                ZMsg response = new ZMsg();
+                response.add(address); // Dirección del cliente
+                response.add(("Ha ocurrido un error con la lectura de la base de recursos. Por favor, intente nuevamente.").getBytes(ZMQ.CHARSET));
+                response.send(worker);
+                response.destroy();
+                address.destroy();
+                continue;
+            }
             // Reservar salones y laboratorios
-            List<Salon> salonesReservados = Recursos.reservarSalones(numSalones-numLaboratorios, facultad, programa);
-            List<Aula> laboratoriosReservados = Recursos.reservarLaboratorios(numLaboratorios, facultad, programa);
+            if (!Recursos.verificarDisponibilidad(semestre, numSalones-numLaboratorios, numLaboratorios)) {
+                ZMsg response = new ZMsg();
+                response.add(address); // Dirección del cliente
+                response.add(("No hay suficientes recursos disponibles. \n" +
+                        "Número de salones disponibles: " + Recursos.getSalonesDisponibles(semestre) + "\n" +
+                        "Número de laboratorios disponibles: " + Recursos.getLaboratoriosDisponibles(semestre)).getBytes(ZMQ.CHARSET));
+                response.send(worker);
+                response.destroy();
+                address.destroy();
+                continue;
+            }
+            List<Salon> salonesReservados = Recursos.reservarSalones(numSalones-numLaboratorios, facultad, programa, semestre);
+            List<Aula> laboratoriosReservados = Recursos.reservarLaboratorios(numLaboratorios, facultad, programa, semestre);
             String responseContent = "";
             if (laboratoriosReservados != null && salonesReservados != null) {
                 List<Salon> salonesLaboratorios = new ArrayList<>();
@@ -75,15 +96,9 @@ public class ServerWorker implements Runnable{
                 if (laboratoriosReservados == null){
                     responseContent += "No hay suficientes laboratorios disponibles. \n";
                 }
-                if (salonesReservados != null){
-                    Recursos.liberarSalones(salonesReservados);
-                }
-                if (laboratoriosReservados != null){
-                    Recursos.liberarAulas(laboratoriosReservados);
-                }
                 responseContent += "Se ha cancelado la reserva. Intente nuevamente.\n";
-                responseContent += "Número de salones disponibles: " + Recursos.getSalonesDisponibles() + " (Recuerde que los salones podrán utilizarse como laboratorios ambulatorios de ser requerido)\n";
-                responseContent += "Número de laboratorios disponibles: " + Recursos.getLaboratoriosDisponibles();
+                responseContent += "Número de salones disponibles: " + Recursos.getSalonesDisponibles(semestre) + " (Recuerde que los salones podrán utilizarse como laboratorios ambulatorios de ser requerido)\n";
+                responseContent += "Número de laboratorios disponibles: " + Recursos.getLaboratoriosDisponibles(semestre);
             }
             ZMsg response = new ZMsg();
             response.add(address); // Dirección del cliente
