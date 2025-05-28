@@ -27,10 +27,10 @@ public class Recursos {
             return true;
         }
         lockSalones = true;
-        boolean verificacido = Aulas.EscribirArchivoSalones(semestre, NUM_SALONES);
+        boolean verificado = Aulas.EscribirArchivoSalones(semestre, NUM_SALONES);
         lockSalones = false;
         Recursos.class.notifyAll();
-        return verificacido;
+        return verificado;
     }
 
     public static synchronized boolean verificarLaboratorios(String semestre) {
@@ -45,10 +45,10 @@ public class Recursos {
                 }
             }
             lockLaboratorios = true;
-            boolean verificacido = Aulas.EscribirArchivoLaboratorios(semestre, NUM_LABORATORIOS);
+            boolean verificado = Aulas.EscribirArchivoLaboratorios(semestre, NUM_LABORATORIOS);
             lockLaboratorios = false;
             Recursos.class.notifyAll();
-            return verificacido;
+            return verificado;
         }
     }
 
@@ -69,7 +69,8 @@ public class Recursos {
             }
         }
         int verificadoLaboratorios = Aulas.laboratoriosDisponibles(semestre);
-        return verificadoSalones >= numSalones && verificadoLaboratorios-verificadoSalones >= numLaboratorios;
+
+        return verificadoSalones >= numSalones && verificadoLaboratorios+verificadoSalones >= numLaboratorios;
     }
 
     public static synchronized List<Salon> reservarSalones(int numSalones, String facultad, String programa, String semestre) {

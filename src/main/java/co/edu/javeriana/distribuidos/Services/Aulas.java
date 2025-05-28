@@ -94,8 +94,11 @@ public class Aulas {
 
     public static List<Salon> reservarSalones(int numSalones, String facultad, String programa, String semestre, boolean esLaboratorio) {
         List<Salon> reservados = new ArrayList<>();
-        if (numSalones <= 0 || numSalones > salonesDisponibles(semestre)) {
-            return null; // No se pueden reservar salones
+        if (numSalones <= 0) {
+            return reservados;
+        }
+        if (numSalones > salonesDisponibles(semestre)) {
+            return null; // No hay suficientes salones disponibles
         }
         try {
             InputStream inputStream = new FileInputStream("data/Salones" + semestre + ".json");
@@ -123,13 +126,10 @@ public class Aulas {
     public static List<Aula> reservarLaboratorios(int numLaboratorios, String facultad, String programa, String semestre) {
         List<Aula> reservados = new ArrayList<>();
         if (numLaboratorios <= 0) {
-            return new ArrayList<>(); // No se pueden reservar laboratorios
+            return new ArrayList<>();
         }
         try {
             InputStream inputStream = new FileInputStream("data/Laboratorios" + semestre + ".json");
-            if (inputStream == null) {
-                return new ArrayList<>(); // No hay laboratorios disponibles
-            }
             BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
             Gson gson = new Gson();
             Type type = new TypeToken<List<Laboratorio>>(){}.getType();
