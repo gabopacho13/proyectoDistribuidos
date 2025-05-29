@@ -25,7 +25,6 @@ public class ClienteFacultades implements Runnable {
         this.escuchaProgramas.bind("tcp://*:5571");
 
         this.client = ctx.createSocket(SocketType.REQ);
-        this.client.setIdentity(facultad.getBytes(StandardCharsets.UTF_8));
         this.client.connect("tcp://" + servidor + ":5570");  // conecta al ROUTER del servidor
     }
 
@@ -87,6 +86,7 @@ public class ClienteFacultades implements Runnable {
 
             while (intentos < 2) {
                 ZMQ.Socket tempClient = ctx.createSocket(SocketType.REQ);
+                tempClient.setIdentity((facultad+"_"+intentos).getBytes(StandardCharsets.UTF_8));
                 tempClient.connect("tcp://" + servidores[intentos] + ":5570");
                 tempClient.send(mensaje);
 
@@ -96,17 +96,12 @@ public class ClienteFacultades implements Runnable {
                 int eventos = poller.poll(5000); // 5 segundos por intento
 
                 if (eventos != -1 && poller.pollin(0)) {
-                    ZMsg msg = ZMsg.recvMsg(tempClient);
-                    if (msg != null) {
-                        ZFrame frame = msg.getLast();
-                        respuesta = client.recvStr();
-                        msg.destroy();
-                        exito = true;
-                        this.client.close(); // Cerrar conexión anterior
-                        this.client = tempClient; // Asignar el nuevo socket como el activo
-                        this.servidor = servidores[intentos]; // Actualizar IP activa
+                    respuesta = tempClient.recvStr();
+                    this.client.close(); // Cerrar conexión anterior
+                    this.client = tempClient; // Asignar el nuevo socket como el activo
+                    this.servidor = servidores[intentos]; // Actualizar IP activa
+                    exito = true;
                         break;
-                    }
                 }
 
                 // Falló este intento
