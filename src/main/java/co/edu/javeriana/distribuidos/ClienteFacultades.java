@@ -80,24 +80,50 @@ public class ClienteFacultades implements Runnable {
             // Enviar mensaje al servidor con formato esperado (incluye facultad al principio)
             String mensaje = facultad + "," + programa + "," + semestre + "," + numAulas + "," + numLaboratorios;
             System.out.println("Enviando solicitud al servidor: " + mensaje);
-            client.send(mensaje);
-            // Crear un poller para esperar la respuesta del servidor
-            ZMQ.Poller poller = ctx.createPoller(1);
-            poller.register(client, ZMQ.Poller.POLLIN);
+            boolean exito = false;
+            String[] servidores = {this.servidor, "localhost" /*"10.43.101.91"*/};
+            int intentos = 0;
+            String respuesta = null;
 
-            // Esperar hasta 7 segundos (7000 ms)
-            int eventos = poller.poll(7000);
+            while (intentos < 2) {
+                ZMQ.Socket tempClient = ctx.createSocket(SocketType.REQ);
+                tempClient.connect("tcp://" + servidores[intentos] + ":5570");
+                tempClient.send(mensaje);
 
-            if (eventos == -1 || !poller.pollin(0)) {
-                // No hubo respuesta del servidor en 7 segundos
+                ZMQ.Poller poller = ctx.createPoller(1);
+                poller.register(tempClient, ZMQ.Poller.POLLIN);
+
+                int eventos = poller.poll(5000); // 5 segundos por intento
+
+                if (eventos != -1 && poller.pollin(0)) {
+                    ZMsg msg = ZMsg.recvMsg(tempClient);
+                    if (msg != null) {
+                        ZFrame frame = msg.getLast();
+                        respuesta = client.recvStr();
+                        msg.destroy();
+                        exito = true;
+                        this.client.close(); // Cerrar conexión anterior
+                        this.client = tempClient; // Asignar el nuevo socket como el activo
+                        this.servidor = servidores[intentos]; // Actualizar IP activa
+                        break;
+                    }
+                }
+
+                // Falló este intento
+                tempClient.close();
+                intentos++;
+            }
+
+// Si no hubo éxito en ambos intentos
+            if (!exito) {
+                this.client.close();
+                this.client = ctx.createSocket(SocketType.REQ);
+                this.client.connect("tcp://" + servidores[0] + ":5570"); // Volver al original
                 String fallo = "Fallo al obtener respuesta del servidor para el programa " + programa + ".";
                 System.out.println(fallo);
                 escuchaProgramas.send(fallo.getBytes(StandardCharsets.UTF_8), 0);
                 continue;
             }
-
-            // Esperar respuesta del servidor (trabajador)
-            String respuesta = client.recvStr();
 
             System.out.println("Respuesta del servidor: " + respuesta + ".\nEnviando respuesta al programa...");
             escuchaProgramas.send(respuesta.getBytes(StandardCharsets.UTF_8), 0);
