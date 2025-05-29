@@ -32,7 +32,7 @@ public class ClienteProgramas implements Runnable{
             requester.connect("tcp://"+ ipFacultad + ":55" + finPuerto);
             System.out.println("la conexión con la facultad se ha realizado satisfactoriamente. Solicitando salones...");
             String mensaje = programa + "," + semestre + "," + numAulas + "," + numLaboratorios;
-
+            long tiempoInicio = System.nanoTime();
             requester.send(mensaje.getBytes(StandardCharsets.UTF_8), 0);
 
             // Crear un poller para esperar respuesta con timeout
@@ -46,8 +46,11 @@ public class ClienteProgramas implements Runnable{
                 ZMsg msg = ZMsg.recvMsg(requester, ZMQ.DONTWAIT);  // Recibir sin bloquear
                 if (msg != null) {
                     ZFrame frame = msg.getLast();
+                    long tiempoFinal = System.nanoTime();
                     String respuesta = frame != null ? frame.getString(StandardCharsets.UTF_8) : null;
                     System.out.println("Respuesta del servidor: " + respuesta);
+                    long tiempoRespuesta = (tiempoFinal - tiempoInicio) / 1_000_000; // Convertir a milisegundos
+                    System.out.println("Tiempo de respuesta: " + tiempoRespuesta + " ms");
                     msg.destroy();
                 } else {
                     System.out.println("La respuesta recibida es nula.");
