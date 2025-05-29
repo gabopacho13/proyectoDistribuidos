@@ -4,7 +4,6 @@ import co.edu.javeriana.distribuidos.Services.ProgramasPorFacultad;
 import org.zeromq.*;
 
 import java.nio.charset.StandardCharsets;
-import java.util.Objects;
 
 public class ClienteFacultades implements Runnable {
 
@@ -13,159 +12,131 @@ public class ClienteFacultades implements Runnable {
     private String servidor;
     private ZContext ctx;
     private ZMQ.Socket escuchaProgramas;
-    private int finPuerto;
 
-    private ZMQ.Socket client;  
-
-    public ClienteFacultades(String facultad, String semestre, String servidor, int finPuerto) {
+    public ClienteFacultades(String facultad, String semestre, String servidor) {
         this.facultad = facultad;
         this.semestre = semestre;
         this.servidor = servidor;
-        this.finPuerto = finPuerto;
         this.ctx = new ZContext();
 
+        // Cambiar puerto a uno no usado por el broker (ej. 5580)
         this.escuchaProgramas = ctx.createSocket(SocketType.REP);
-        this.escuchaProgramas.bind("tcp://*:55" + finPuerto);
-
-        this.client = ctx.createSocket(SocketType.REQ);
-        this.client.connect("tcp://" + servidor + ":5570");  // conecta al ROUTER del servidor
+        this.escuchaProgramas.bind("tcp://*:5580");
     }
 
     @Override
     public void run() {
-        System.out.println("Facultad " + facultad + " conectada a " + servidor + ":5570 y escuchando en 55" + finPuerto + "...");
+        System.out.println("Facultad " + facultad + " conectada al servidor en " + servidor + ":5570. Escuchando en puerto 5580...");
         while (!Thread.currentThread().isInterrupted()) {
             System.out.println("Esperando solicitudes...");
+
             byte[] data = escuchaProgramas.recv(0);
             if (data == null) {
                 escuchaProgramas.send("No se recibió ningún mensaje.".getBytes(StandardCharsets.UTF_8), 0);
                 continue;
             }
-            String request = new String(data, StandardCharsets.UTF_8);
-            System.out.println("Mensaje recibido: " + request);
 
+            String request = new String(data, StandardCharsets.UTF_8);
+            System.out.println("Solicitud recibida: " + request);
             String[] partes = request.split(",");
             if (partes.length != 4) {
-                escuchaProgramas.send("El mensaje no tiene el formato correcto. Debe ser: programa, semestre, numAulas, numLaboratorios".getBytes(StandardCharsets.UTF_8), 0);
+                escuchaProgramas.send("Formato inválido. Debe ser: programa,semestre,numAulas,numLaboratorios".getBytes(StandardCharsets.UTF_8), 0);
                 continue;
             }
 
             String programa = partes[0];
+            String reqSemestre = partes[1];
+            int numAulas, numLaboratorios;
+
             if (!ProgramasPorFacultad.buscarPrograma(facultad.toLowerCase(), programa.toLowerCase())) {
-                escuchaProgramas.send(("El programa " + programa + " no es válido para la facultad " + facultad + ".").getBytes(StandardCharsets.UTF_8), 0);
+                escuchaProgramas.send(("El programa " + programa + " no pertenece a la facultad " + facultad + ".").getBytes(StandardCharsets.UTF_8), 0);
                 continue;
             }
-            String semestre = partes[1];
-            if (!semestre.equals(this.semestre)) {
-                escuchaProgramas.send(("El semestre " + semestre + " no es válido para la facultad " + facultad + ".").getBytes(StandardCharsets.UTF_8), 0);
+
+            if (!reqSemestre.equals(this.semestre)) {
+                escuchaProgramas.send(("El semestre " + reqSemestre + " no corresponde con el configurado (" + this.semestre + ").").getBytes(StandardCharsets.UTF_8), 0);
                 continue;
             }
-            int numAulas;
+
             try {
                 numAulas = Integer.parseInt(partes[2]);
-            } catch (NumberFormatException e) {
-                escuchaProgramas.send("El número de aulas debe ser un número entero.".getBytes(StandardCharsets.UTF_8), 0);
-                continue;
-            }
-            int numLaboratorios;
-            try {
                 numLaboratorios = Integer.parseInt(partes[3]);
+
                 if (numLaboratorios > numAulas) {
-                    escuchaProgramas.send("El número de laboratorios no puede ser mayor que el número de aulas.".getBytes(StandardCharsets.UTF_8), 0);
+                    escuchaProgramas.send("Los laboratorios no pueden exceder el número de aulas.".getBytes(StandardCharsets.UTF_8), 0);
                     continue;
                 }
             } catch (NumberFormatException e) {
-                escuchaProgramas.send("El número de laboratorios debe ser un número entero.".getBytes(StandardCharsets.UTF_8), 0);
+                escuchaProgramas.send("Los valores de aulas y laboratorios deben ser enteros.".getBytes(StandardCharsets.UTF_8), 0);
                 continue;
             }
 
-            // Enviar mensaje al servidor con formato esperado (incluye facultad al principio)
             String mensaje = facultad + "," + programa + "," + semestre + "," + numAulas + "," + numLaboratorios;
-            System.out.println("Enviando solicitud al servidor: " + mensaje);
-            boolean exito = false;
             String[] servidores = {this.servidor, "10.43.101.91"};
-            int intentos = 0;
+            boolean exito = false;
             String respuesta = null;
 
-            while (intentos < 2) {
-                ZMQ.Socket tempClient = ctx.createSocket(SocketType.REQ);
-                tempClient.setIdentity((facultad+"_"+intentos).getBytes(StandardCharsets.UTF_8));
-                tempClient.connect("tcp://" + servidores[intentos] + ":5570");
-                tempClient.send(mensaje);
+            for (String servidorIntento : servidores) {
+                ZMQ.Socket tempClient = ctx.createSocket(SocketType.DEALER);
+                tempClient.connect("tcp://" + servidorIntento + ":5570");
+
+                tempClient.send(mensaje.getBytes(StandardCharsets.UTF_8), 0);
 
                 ZMQ.Poller poller = ctx.createPoller(1);
                 poller.register(tempClient, ZMQ.Poller.POLLIN);
 
-                int eventos = poller.poll(5000); // 5 segundos por intento
+                int eventos = poller.poll(5000); // Timeout 5 segundos
 
                 if (eventos != -1 && poller.pollin(0)) {
-                    respuesta = tempClient.recvStr();
-                    this.client.close(); // Cerrar conexión anterior
-                    this.client = tempClient; // Asignar el nuevo socket como el activo
-                    this.servidor = servidores[intentos]; // Actualizar IP activa
-                    exito = true;
+                    ZMsg msg = ZMsg.recvMsg(tempClient);
+                    if (msg != null) {
+                        ZFrame frame = msg.getLast();
+                        respuesta = frame != null ? frame.getString(StandardCharsets.UTF_8) : null;
+                        msg.destroy();
+                        exito = true;
+                        this.servidor = servidorIntento;
+                        tempClient.close();
                         break;
+                    }
                 }
 
-                // Falló este intento
                 tempClient.close();
-                intentos++;
             }
 
-// Si no hubo éxito en ambos intentos
             if (!exito) {
-                this.client.close();
-                this.client = ctx.createSocket(SocketType.REQ);
-                this.client.connect("tcp://" + servidores[0] + ":5570"); // Volver al original
-                String fallo = "Fallo al obtener respuesta del servidor para el programa " + programa + ".";
-                System.out.println(fallo);
-                escuchaProgramas.send(fallo.getBytes(StandardCharsets.UTF_8), 0);
-                continue;
+                respuesta = "Error: No se obtuvo respuesta del servidor para el programa " + programa + ".";
             }
 
-            System.out.println("Respuesta del servidor: " + respuesta + ".\nEnviando respuesta al programa...");
             escuchaProgramas.send(respuesta.getBytes(StandardCharsets.UTF_8), 0);
-            System.out.println("Respuesta enviada al programa " + programa);
+            System.out.println("Respuesta enviada: " + respuesta);
         }
+
+        escuchaProgramas.close();
+        ctx.close();
     }
 
     public static void main(String[] args) {
-        if (args.length < 3){
-            System.out.println("modo de uso: mvn exec:java '-Dexec.mainClass=co.edu.javeriana.distribuidos.ClienteFacultades' '-Dexec.args=facultad(separar palabras por \"_\") semestre ipServidor'");
+        if (args.length < 3) {
+            System.out.println("Uso: mvn exec:java -Dexec.mainClass=co.edu.javeriana.distribuidos.ClienteFacultades -Dexec.args=\"facultad semestre ipServidor\"");
             return;
         }
+
         String facultad = args[0];
         String semestre = args[1];
         String servidor = args[2];
 
-        if (Objects.equals(facultad, "todas")){
-            int cont = 71;
-            for (String f : ProgramasPorFacultad.getFacultades()) {
-                Thread clienteThread = new Thread(new ClienteFacultades(f, semestre, servidor, cont));
-                clienteThread.start();
-                cont++;
-                /*try {
-                    clienteThread.join();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }*/
-            }
-        }
-        else if (!ProgramasPorFacultad.buscarFacultad(facultad.toLowerCase())) {
+        if (!ProgramasPorFacultad.buscarFacultad(facultad.toLowerCase())) {
             System.out.println("Facultad no válida: " + facultad);
             return;
         }
-        else {
-            // Crear un nuevo hilo para el cliente
-            Thread clienteThread = new Thread(new ClienteFacultades(facultad, semestre, servidor, 71));
-            clienteThread.start();
 
-            // Esperar a que el hilo termine
-            try {
-                clienteThread.join();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+        Thread clienteThread = new Thread(new ClienteFacultades(facultad, semestre, servidor));
+        clienteThread.start();
+
+        try {
+            clienteThread.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
     }
 }
