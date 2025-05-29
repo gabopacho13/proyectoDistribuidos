@@ -23,20 +23,30 @@ public class ClienteProgramas implements Runnable{
     @Override
     public void run(){
         try (ZContext context = new ZContext()) {
-            //  Socket to talk to server
             ZMQ.Socket requester = context.createSocket(SocketType.REQ);
-            requester.connect("tcp://"+ ipFacultad + ":5571");
+            requester.connect("tcp://" + ipFacultad + ":5571");
             System.out.println("la conexión con la facultad se ha realizado satisfactoriamente. Solicitando salones...");
+
             String mensaje = programa + "," + semestre + "," + numAulas + "," + numLaboratorios;
-
             requester.send(mensaje.getBytes(StandardCharsets.UTF_8), 0);
-            ZMsg msg = ZMsg.recvMsg(requester);
-            if (msg != null) {
-                ZFrame frame = msg.getLast(); // obtiene el último frame
-                String respuesta = frame != null ? frame.getString(StandardCharsets.UTF_8) : null;
 
-                System.out.println("Respuesta del servidor: " + respuesta);
-                msg.destroy();
+            // Crear un poller para esperar respuesta con timeout
+            ZMQ.Poller poller = context.createPoller(1);
+            poller.register(requester, ZMQ.Poller.POLLIN);
+
+            int eventos = poller.poll(7000);  // Esperar 7 segundos
+            if (eventos == -1 || !poller.pollin(0)) {
+                System.out.println("No se recibió respuesta de la facultad para el programa " + programa + ".");
+            } else {
+                ZMsg msg = ZMsg.recvMsg(requester, ZMQ.DONTWAIT);  // Recibir sin bloquear
+                if (msg != null) {
+                    ZFrame frame = msg.getLast();
+                    String respuesta = frame != null ? frame.getString(StandardCharsets.UTF_8) : null;
+                    System.out.println("Respuesta del servidor: " + respuesta);
+                    msg.destroy();
+                } else {
+                    System.out.println("La respuesta recibida es nula.");
+                }
             }
         }
     }
