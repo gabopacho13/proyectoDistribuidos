@@ -1,1 +1,2662 @@
-[{"esLaboratorio":true,"id":1,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":2,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":3,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":4,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":5,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":6,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":7,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":8,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":9,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":10,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":11,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":12,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":13,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":14,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":15,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":16,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":17,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":18,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":19,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":20,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":21,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":22,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":23,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":24,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":25,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":26,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":27,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":28,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":29,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":30,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":31,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":32,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":33,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":34,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":35,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":36,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":37,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":38,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":39,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":40,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":41,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":42,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":43,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":44,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":45,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":46,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":47,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":48,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":49,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":50,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":51,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":52,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":53,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":54,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":55,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":56,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":57,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":58,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":59,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":60,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":61,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":62,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":63,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":64,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":65,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":66,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":67,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":68,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":69,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":70,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":71,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":72,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":73,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":74,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":75,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":76,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":77,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":78,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":79,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":80,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":81,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":82,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":83,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":84,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":85,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":86,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":87,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":88,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":89,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":90,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":91,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":92,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":93,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":94,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":95,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":96,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":97,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":98,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":99,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":100,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":101,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":102,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":103,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":104,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":105,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":106,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":107,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":108,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":109,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":110,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":111,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":112,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":113,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":114,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":115,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":116,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":117,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":118,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":119,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":120,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":121,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":122,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":123,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":124,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":125,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":126,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":127,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":128,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":129,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":130,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":131,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":132,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":133,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":134,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":135,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":136,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":137,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":138,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":139,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":140,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":141,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":142,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":143,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":144,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":145,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":146,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":147,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":148,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":149,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":150,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":151,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":152,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":153,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":154,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":155,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":156,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":157,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":158,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":159,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":160,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":161,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":162,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":163,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":164,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":165,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":166,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":167,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":168,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":169,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":170,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":171,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":172,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":173,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":174,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":175,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":176,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":177,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":178,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":179,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":180,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":181,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":182,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":183,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":184,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":185,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":186,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":187,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":188,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":189,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":190,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":191,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":192,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":193,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":194,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":195,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":196,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":197,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":198,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":199,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":200,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":201,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":202,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":203,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":204,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":205,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":206,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":207,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":208,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":209,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":210,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":211,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":212,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":213,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":214,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":215,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":216,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":217,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":218,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":219,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":220,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":221,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":222,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":223,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":224,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":225,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":226,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":227,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":228,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":229,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":230,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":231,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":232,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":233,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":234,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":235,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":236,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":237,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":238,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":239,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":240,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":241,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":242,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":243,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":244,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":245,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":246,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":247,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":248,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":249,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":250,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":251,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":252,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":253,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":254,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":255,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":256,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":257,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":258,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":259,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":260,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":261,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":262,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":263,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":264,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":265,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":266,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":267,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":268,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":269,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":270,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":271,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":272,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":273,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":274,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":275,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":276,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":277,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":278,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":279,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":280,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":281,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":282,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":283,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":284,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":285,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":286,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":287,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":288,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":289,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":290,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":291,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":292,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":293,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":294,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":295,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":296,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":297,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":298,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":299,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":300,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":301,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":302,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":303,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":304,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":305,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":306,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":307,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":308,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":309,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":310,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":311,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":312,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":313,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":314,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":315,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":316,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":317,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":318,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":319,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":true,"id":320,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"Antropolog�a"},{"esLaboratorio":false,"id":321,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":false,"id":322,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":false,"id":323,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":false,"id":324,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":false,"id":325,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":false,"id":326,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":false,"id":327,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":false,"id":328,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":false,"id":329,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":false,"id":330,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":false,"id":331,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":false,"id":332,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":true,"id":333,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":true,"id":334,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":true,"id":335,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":true,"id":336,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":false,"id":337,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":false,"id":338,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":false,"id":339,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":false,"id":340,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":false,"id":341,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":false,"id":342,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":true,"id":343,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":true,"id":344,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":true,"id":345,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":true,"id":346,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":false,"id":347,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":false,"id":348,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":false,"id":349,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":false,"id":350,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":false,"id":351,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":false,"id":352,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":true,"id":353,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":true,"id":354,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":true,"id":355,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":true,"id":356,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":false,"id":357,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":false,"id":358,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":false,"id":359,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":false,"id":360,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":false,"id":361,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":false,"id":362,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":true,"id":363,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":true,"id":364,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":true,"id":365,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":true,"id":366,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":false,"id":367,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":false,"id":368,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":false,"id":369,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":false,"id":370,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":false,"id":371,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":false,"id":372,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":true,"id":373,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":true,"id":374,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":true,"id":375,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":true,"id":376,"disponible":false,"facultadAsignada":"Ciencias_Sociales","programaAsignado":"antropología"},{"esLaboratorio":false,"id":377,"disponible":true,"facultadAsignada":"","programaAsignado":""},{"esLaboratorio":false,"id":378,"disponible":true,"facultadAsignada":"","programaAsignado":""},{"esLaboratorio":false,"id":379,"disponible":true,"facultadAsignada":"","programaAsignado":""},{"esLaboratorio":false,"id":380,"disponible":true,"facultadAsignada":"","programaAsignado":""}]
+[
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 1,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 2,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 3,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 4,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 5,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 6,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 7,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 8,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 9,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 10,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 11,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 12,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 13,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 14,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 15,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 16,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 17,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 18,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 19,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 20,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 21,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 22,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 23,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 24,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 25,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 26,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 27,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 28,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 29,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 30,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 31,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 32,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 33,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 34,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 35,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 36,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 37,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 38,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 39,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 40,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 41,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 42,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 43,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 44,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 45,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 46,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 47,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 48,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 49,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 50,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 51,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 52,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 53,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 54,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 55,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 56,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 57,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 58,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 59,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 60,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 61,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 62,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 63,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 64,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 65,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 66,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 67,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 68,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 69,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 70,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 71,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 72,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 73,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 74,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 75,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 76,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 77,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 78,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 79,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 80,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 81,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 82,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 83,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 84,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 85,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 86,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 87,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 88,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 89,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 90,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 91,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 92,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 93,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 94,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 95,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 96,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 97,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 98,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 99,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 100,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 101,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 102,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 103,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 104,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 105,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 106,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 107,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 108,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 109,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 110,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 111,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 112,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 113,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 114,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 115,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 116,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 117,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 118,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 119,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 120,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 121,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 122,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 123,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 124,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 125,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 126,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 127,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 128,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 129,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 130,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 131,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 132,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 133,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 134,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 135,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 136,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 137,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 138,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 139,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 140,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 141,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 142,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 143,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 144,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 145,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 146,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 147,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 148,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 149,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 150,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 151,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 152,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 153,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 154,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 155,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 156,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 157,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 158,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 159,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 160,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 161,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 162,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 163,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 164,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 165,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 166,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 167,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 168,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 169,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 170,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 171,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 172,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 173,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 174,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 175,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 176,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 177,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 178,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 179,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 180,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 181,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 182,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 183,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 184,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 185,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 186,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 187,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 188,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 189,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 190,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 191,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 192,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 193,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 194,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 195,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 196,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 197,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 198,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 199,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 200,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 201,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 202,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 203,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 204,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 205,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 206,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 207,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 208,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 209,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 210,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 211,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 212,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 213,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 214,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 215,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 216,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 217,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 218,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 219,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 220,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 221,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 222,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 223,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 224,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 225,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 226,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 227,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 228,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 229,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 230,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 231,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 232,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 233,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 234,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 235,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 236,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 237,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 238,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 239,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 240,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 241,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 242,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 243,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 244,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 245,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 246,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 247,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 248,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 249,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 250,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 251,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 252,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 253,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 254,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 255,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 256,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 257,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 258,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 259,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 260,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 261,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 262,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 263,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 264,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 265,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 266,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 267,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 268,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 269,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 270,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 271,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 272,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 273,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 274,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 275,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 276,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 277,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 278,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 279,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 280,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 281,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 282,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 283,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 284,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 285,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 286,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 287,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 288,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 289,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 290,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 291,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 292,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 293,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 294,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 295,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 296,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 297,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 298,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 299,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 300,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 301,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 302,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 303,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 304,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 305,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 306,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 307,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 308,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 309,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 310,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 311,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 312,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 313,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 314,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 315,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 316,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 317,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 318,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 319,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "Antropolog�a",
+    "id": 320,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 321,
+    "esLaboratorio": false,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 322,
+    "esLaboratorio": false,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 323,
+    "esLaboratorio": false,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 324,
+    "esLaboratorio": false,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 325,
+    "esLaboratorio": false,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 326,
+    "esLaboratorio": false,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 327,
+    "esLaboratorio": false,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 328,
+    "esLaboratorio": false,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 329,
+    "esLaboratorio": false,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 330,
+    "esLaboratorio": false,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 331,
+    "esLaboratorio": false,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 332,
+    "esLaboratorio": false,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 333,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 334,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 335,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 336,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 337,
+    "esLaboratorio": false,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 338,
+    "esLaboratorio": false,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 339,
+    "esLaboratorio": false,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 340,
+    "esLaboratorio": false,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 341,
+    "esLaboratorio": false,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 342,
+    "esLaboratorio": false,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 343,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 344,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 345,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 346,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 347,
+    "esLaboratorio": false,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 348,
+    "esLaboratorio": false,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 349,
+    "esLaboratorio": false,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 350,
+    "esLaboratorio": false,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 351,
+    "esLaboratorio": false,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 352,
+    "esLaboratorio": false,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 353,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 354,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 355,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 356,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 357,
+    "esLaboratorio": false,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 358,
+    "esLaboratorio": false,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 359,
+    "esLaboratorio": false,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 360,
+    "esLaboratorio": false,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 361,
+    "esLaboratorio": false,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 362,
+    "esLaboratorio": false,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 363,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 364,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 365,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 366,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 367,
+    "esLaboratorio": false,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 368,
+    "esLaboratorio": false,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 369,
+    "esLaboratorio": false,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 370,
+    "esLaboratorio": false,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 371,
+    "esLaboratorio": false,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 372,
+    "esLaboratorio": false,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 373,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 374,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 375,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "Ciencias_Sociales",
+    "programaAsignado": "antropología",
+    "id": 376,
+    "esLaboratorio": true,
+    "disponible": false
+  },
+  {
+    "facultadAsignada": "",
+    "programaAsignado": "",
+    "id": 377,
+    "esLaboratorio": false,
+    "disponible": true
+  },
+  {
+    "facultadAsignada": "",
+    "programaAsignado": "",
+    "id": 378,
+    "esLaboratorio": false,
+    "disponible": true
+  },
+  {
+    "facultadAsignada": "",
+    "programaAsignado": "",
+    "id": 379,
+    "esLaboratorio": false,
+    "disponible": true
+  },
+  {
+    "facultadAsignada": "",
+    "programaAsignado": "",
+    "id": 380,
+    "esLaboratorio": false,
+    "disponible": true
+  }
+]
