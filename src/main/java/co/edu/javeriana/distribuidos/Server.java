@@ -6,7 +6,7 @@ import java.net.InetAddress;
 
 public class Server {
 
-    public Server(){
+    public Server(String semestre){
         try (ZContext ctx = new ZContext()) {
             //  Frontend socket talks to clients over TCP
             Socket frontend = ctx.createSocket(SocketType.ROUTER);
@@ -24,21 +24,20 @@ public class Server {
                 try (ZContext ctxHeartbeat = new ZContext()) {
                     Socket publisher = ctxHeartbeat.createSocket(SocketType.PUB);
                     publisher.bind("tcp://*:5572");
-                
+
                     while (!Thread.currentThread().isInterrupted()) {
                         try {
-                            String salonesData = leerJson("Salones.json");
-                            String laboratoriosData = leerJson("Laboratorios.json");
-                            String programasData = leerJson("ProgramasPorFacultad.json");
-            
+                            String salonesData = leerJson("Salones" + semestre + ".json");
+                            String laboratoriosData = leerJson("Laboratorios" + semestre + ".json");
+
                             String heartbeatJson = String.format(
-                                "{\"status\": \"estoy vivo\", \"salones\": %s, \"laboratorios\": %s, \"programas\": %s}",
-                                salonesData, laboratoriosData, programasData
+                                    "{\"status\": \"estoy vivo\", \"semestre\": %s, \"salones\": %s, \"laboratorios\": %s}",
+                                    semestre, salonesData, laboratoriosData
                             );
-                
+
                             publisher.send(heartbeatJson);
                             Thread.sleep(2000);
-                
+
                         } catch (Exception e) {
                             System.err.println("Error leyendo archivos JSON para heartbeat: " + e.getMessage());
                         }
@@ -54,21 +53,21 @@ public class Server {
 
 
     private String leerJson(String nombreArchivo) throws Exception {
-        ClassLoader classLoader = getClass().getClassLoader();
-        java.net.URL recurso = classLoader.getResource(nombreArchivo);
-        if (recurso == null) {
-            throw new java.io.FileNotFoundException("No se encontró el archivo: " + nombreArchivo);
+        // Modificado para leer desde la carpeta /data en el sistema de archivos
+        java.nio.file.Path path = java.nio.file.Paths.get("data", nombreArchivo);
+        if (!java.nio.file.Files.exists(path)) {
+            throw new java.io.FileNotFoundException("No se encontró el archivo: " + path.toAbsolutePath());
         }
-        java.nio.file.Path path = java.nio.file.Paths.get(recurso.toURI());
         return new String(java.nio.file.Files.readAllBytes(path), java.nio.charset.StandardCharsets.UTF_8);
     }
-    
 
-    public static void main(String[] args) throws Exception
-    {
+    public static void main(String[] args) throws Exception {
+        if (args.length != 1) {
+            System.out.println("Modo de uso: mvn exec:java '-Dexec.mainClass=co.edu.javeriana.distribuidos.Server' '-Dexec.args=semestre'");
+            return;
+        }
         String ip = InetAddress.getLocalHost().getHostAddress();
         System.out.println("Servidor iniciado en " + ip + "... esperando solicitudes de recursos.");
-        //Server server = new Server();
-        new Server();
+        new Server(args[0]);
     }
 }

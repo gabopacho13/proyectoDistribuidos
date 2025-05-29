@@ -1,7 +1,11 @@
 package co.edu.javeriana.distribuidos;
 
-import org.zeromq.*;
+import org.zeromq.SocketType;
+import org.zeromq.ZContext;
+import org.zeromq.ZMQ;
 import org.zeromq.ZMQ.Socket;
+import org.zeromq.ZMsg;
+
 import java.net.InetAddress;
 import java.nio.charset.StandardCharsets;
 
@@ -13,11 +17,12 @@ public class BackupServer {
             Socket subscriber = ctx.createSocket(SocketType.SUB);
             subscriber.connect("tcp://localhost:5572"); // PONER IP  del servidor principal
             subscriber.subscribe("");
+            String semestre = "2023-2"; // Asignar semestre por defecto, se puede modificar según necesidad
 
             long lastHeartbeat = System.currentTimeMillis();
 
             // Socket interno para workers
-            Socket backend = ctx.createSocket(SocketType.DEALER);
+            Socket backend = ctx.createSocket(SocketType.ROUTER);
             backend.bind("inproc://backend");
 
             // Lanzar workers (igual que el principal)
@@ -36,18 +41,20 @@ public class BackupServer {
 
                     // Parsear el JSON recibido
                     org.json.JSONObject root = new org.json.JSONObject(jsonData);
+                    semestre = root.getString("semestre");
+                    // Guardar los archivos en la carpeta "data"
+                    java.nio.file.Path dataDir = java.nio.file.Paths.get("data");
+                    if (!java.nio.file.Files.exists(dataDir)) {
+                        java.nio.file.Files.createDirectories(dataDir);
+                    }
 
                     java.nio.file.Files.write(
-                        java.nio.file.Paths.get("Salones.json"),
-                        root.getJSONArray("salones").toString(2).getBytes(StandardCharsets.UTF_8)
+                            dataDir.resolve("Salones" + semestre + ".json"),
+                            root.getJSONArray("salones").toString(2).getBytes(StandardCharsets.UTF_8)
                     );
                     java.nio.file.Files.write(
-                        java.nio.file.Paths.get("Laboratorios.json"),
-                        root.getJSONArray("laboratorios").toString(2).getBytes(StandardCharsets.UTF_8)
-                    );
-                    java.nio.file.Files.write(
-                        java.nio.file.Paths.get("ProgramasPorFacultad.json"),
-                        root.getJSONObject("programas").toString(2).getBytes(StandardCharsets.UTF_8)
+                            dataDir.resolve("Laboratorios" + semestre + ".json"),
+                            root.getJSONArray("laboratorios").toString(2).getBytes(StandardCharsets.UTF_8)
                     );
 
                     msg.destroy();
@@ -55,9 +62,7 @@ public class BackupServer {
                     System.out.println("¡Servidor principal inactivo! Asumiendo rol principal en puerto 5570...");
                     subscriber.close();
 
-                    Socket frontend = ctx.createSocket(SocketType.ROUTER);
-                    frontend.bind("tcp://*:5570");
-                    ZMQ.proxy(frontend, backend, null);
+                    Server.main(new String[]{semestre});
                     break;
                 }
                 Thread.sleep(500);
