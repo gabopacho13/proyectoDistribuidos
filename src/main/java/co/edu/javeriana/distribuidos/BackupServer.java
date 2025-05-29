@@ -11,11 +11,11 @@ import java.nio.charset.StandardCharsets;
 
 public class BackupServer {
 
-    public BackupServer() {
+    public BackupServer(String ipServidor) {
         try (ZContext ctx = new ZContext()) {
             // Socket para recibir heartbeat
             Socket subscriber = ctx.createSocket(SocketType.SUB);
-            subscriber.connect("tcp://localhost:5572"); // PONER IP  del servidor principal
+            subscriber.connect("tcp://" + ipServidor + ":5572"); // PONER IP  del servidor principal
             subscriber.subscribe("");
             String semestre = "2023-2"; // Asignar semestre por defecto, se puede modificar según necesidad
 
@@ -32,14 +32,27 @@ public class BackupServer {
 
             System.out.println("Servidor de respaldo iniciado, escuchando heartbeat...");
 
+            boolean isPrimary = false;
+            Thread servidorPrincipal = null;
+
             while (!Thread.currentThread().isInterrupted()) {
                 ZMsg msg = ZMsg.recvMsg(subscriber, ZMQ.DONTWAIT);
-                if (msg != null) {
-                    lastHeartbeat = System.currentTimeMillis();
-                    String jsonData = msg.getLast().getString(StandardCharsets.UTF_8);
-                    System.out.println("Heartbeat con datos recibido del servidor principal.");
+                long now = System.currentTimeMillis();
 
-                    // Parsear el JSON recibido
+                if (msg != null) {
+                    lastHeartbeat = now;
+
+                    if (isPrimary) {
+                        if (servidorPrincipal != null && servidorPrincipal.isAlive()) {
+                            System.out.println("Servidor original volvió. Cerrando el servidor temporal...");
+                            Server.shutdown();  // Llama al método para cerrar el servidor
+                            servidorPrincipal.join();  // Espera a que termine
+                        }
+                        isPrimary = false;
+                    }
+
+                    // procesar JSON, guardar archivos
+                    String jsonData = msg.getLast().getString(StandardCharsets.UTF_8);
                     org.json.JSONObject root = new org.json.JSONObject(jsonData);
                     semestre = root.getString("semestre");
                     // Guardar los archivos en la carpeta "data"
@@ -58,13 +71,21 @@ public class BackupServer {
                     );
 
                     msg.destroy();
-                } else if (System.currentTimeMillis() - lastHeartbeat > 3000) {
-                    System.out.println("¡Servidor principal inactivo! Asumiendo rol principal en puerto 5570...");
-                    subscriber.close();
-
-                    Server.main(new String[]{semestre});
-                    break;
+                } else if (!isPrimary && (now - lastHeartbeat > 3000)) {
+                    System.out.println("¡Servidor principal inactivo! Asumiendo rol principal...");
+                    String finalSemestre = semestre;
+                    servidorPrincipal = new Thread(() -> {
+                        try {
+                            Server.main(new String[]{finalSemestre});
+                        } catch (Exception e) {
+                            System.out.println("Error ejecutando servidor principal desde respaldo.");
+                            e.printStackTrace();
+                        }
+                    });
+                    servidorPrincipal.start();
+                    isPrimary = true;
                 }
+
                 Thread.sleep(500);
             }
 
@@ -74,8 +95,12 @@ public class BackupServer {
     }
 
     public static void main(String[] args) throws Exception {
+        if (args.length != 1) {
+            System.out.println("Modo de uso: mvn exec:java '-Dexec.mainClass=co.edu.javeriana.distribuidos.BackupServer' '-Dexec.args=ipServidor'");
+            System.exit(1);
+        }
         String ip = InetAddress.getLocalHost().getHostAddress();
         System.out.println("Servidor de respaldo en " + ip + " listo para asumir si el principal falla.");
-        new BackupServer();
+        new BackupServer(args[0]);
     }
 }
