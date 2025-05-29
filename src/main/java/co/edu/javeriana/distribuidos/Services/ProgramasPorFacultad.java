@@ -45,4 +45,40 @@ public class ProgramasPorFacultad {
             return false;
         }
     }
+
+    public static List<String> getFacultades() {
+        try {
+            ObjectMapper mapper = new ObjectMapper();
+            InputStream inputStream = ProgramasPorFacultad.class.getClassLoader().getResourceAsStream("ProgramasPorFacultad.json");
+            if (inputStream == null) {
+                System.out.println("No se encontró el archivo ProgramasPorFacultad.json");
+                return List.of();
+            }
+
+            // El JSON es un mapa con nombres de facultad como claves
+            Map<String, Object> facultades = mapper.readValue(inputStream, Map.class);
+            return List.copyOf(facultades.keySet());
+        } catch (Exception e) {
+            System.out.println("Error al leer facultades.json: " + e.getMessage());
+            return List.of();
+        }
+    }
+
+    public static List<List<String>> getProgramasPorFacultad() {
+        try {
+            ObjectMapper mapper = new ObjectMapper();
+            InputStream inputStream = ProgramasPorFacultad.class.getClassLoader().getResourceAsStream("ProgramasPorFacultad.json");
+            if (inputStream == null) {
+                System.out.println("No se encontró el archivo ProgramasPorFacultad.json");
+                return List.of();
+            }
+
+            // El JSON es un mapa de facultad -> lista de programas
+            Map<String, List<String>> facultades = mapper.readValue(inputStream, new TypeReference<>() {});
+            return List.copyOf(facultades.values());
+        } catch (Exception e) {
+            System.out.println("Error al leer facultades.json: " + e.getMessage());
+            return List.of();
+        }
+    }
 }

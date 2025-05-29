@@ -33,7 +33,7 @@ public class Server {
         heartbeatThread = new Thread(() -> {
             try (ZContext ctxHeartbeat = new ZContext()) {
                 Socket publisher = ctxHeartbeat.createSocket(SocketType.PUB);
-                publisher.bind("tcp://*:5572");
+                publisher.bind("tcp://*:5590");
 
                 while (!Thread.currentThread().isInterrupted()) {
                     try {
