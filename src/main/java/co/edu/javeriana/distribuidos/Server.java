@@ -40,8 +40,8 @@ public class Server {
 
                 while (!Thread.currentThread().isInterrupted()) {
                     try {
-                        String salonesData = leerJson("Salones" + semestre + ".json");
-                        String laboratoriosData = leerJson("Laboratorios" + semestre + ".json");
+                        String salonesData = leerJson("Salones" + semestre + ".json", semestre);
+                        String laboratoriosData = leerJson("Laboratorios" + semestre + ".json", semestre);
 
                         String heartbeatJson = String.format(
                                 "{\"status\": \"estoy vivo\", \"semestre\": \"%s\", \"salones\": %s, \"laboratorios\": %s}",
@@ -112,10 +112,11 @@ public class Server {
         shutdown();
     }
 
-    private String leerJson(String nombreArchivo) throws Exception {
+    private String leerJson(String nombreArchivo, String semestre) throws Exception {
         java.nio.file.Path path = Paths.get("data", nombreArchivo);
         if (!Files.exists(path)) {
-            throw new java.io.FileNotFoundException("No se encontró el archivo: " + path.toAbsolutePath());
+            Recursos.verificarSalones(semestre);
+            Recursos.verificarLaboratorios(semestre);
         }
         return new String(Files.readAllBytes(path), StandardCharsets.UTF_8);
     }
