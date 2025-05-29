@@ -1,138 +1,73 @@
 package co.edu.javeriana.distribuidos;
 
-import org.zeromq.*;
-import org.zeromq.ZMQ.Socket;
+import org.zeromq.ZContext;
+import org.zeromq.SocketType;
+import org.zeromq.ZMQ;
 
 import java.net.InetAddress;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.LinkedList;
-import java.util.Queue;
 
 public class Server {
 
-    private static ZContext ctx;
-    private static Socket frontend;
-    private static Socket backend;
-    private static Thread heartbeatThread;
     private static volatile boolean running = true;
-    private static final Queue<String> workerQueue = new LinkedList<>();
 
     public Server(String semestre) throws Exception {
-        ctx = new ZContext();
+        try (ZContext ctx = new ZContext()) {
 
-        frontend = ctx.createSocket(SocketType.ROUTER);
-        frontend.bind("tcp://*:5570");
+            // Lanzar workers conectados al backend interno
+            for (int i = 0; i < 10; i++) {
+                new Thread(new ServerWorker(ctx, semestre, i)).start();
+            }
 
-        backend = ctx.createSocket(SocketType.ROUTER);
-        backend.bind("inproc://backend");
+            // Lanzar hilo de heartbeat (como antes)
+            Thread heartbeatThread = new Thread(() -> {
+                try (ZContext ctxHeartbeat = new ZContext()) {
+                    var publisher = ctxHeartbeat.createSocket(SocketType.PUB);
+                    publisher.bind("tcp://*:5572");
 
-        // Iniciar workers
-        for (int threadNbr = 0; threadNbr < 10; threadNbr++)
-            new Thread(new ServerWorker(ctx, threadNbr)).start();
+                    while (!Thread.currentThread().isInterrupted()) {
+                        try {
+                            String salonesData = leerJson("Salones" + semestre + ".json", semestre);
+                            String laboratoriosData = leerJson("Laboratorios" + semestre + ".json", semestre);
 
-        // Iniciar thread de heartbeat
-        heartbeatThread = new Thread(() -> {
-            try (ZContext ctxHeartbeat = new ZContext()) {
-                Socket publisher = ctxHeartbeat.createSocket(SocketType.PUB);
-                publisher.bind("tcp://*:5590");
+                            String heartbeatJson = String.format(
+                                    "{\"status\": \"estoy vivo\", \"semestre\": \"%s\", \"salones\": %s, \"laboratorios\": %s}",
+                                    semestre, salonesData, laboratoriosData
+                            );
 
-                while (!Thread.currentThread().isInterrupted()) {
-                    try {
-                        String salonesData = leerJson("Salones" + semestre + ".json", semestre);
-                        String laboratoriosData = leerJson("Laboratorios" + semestre + ".json", semestre);
-
-                        String heartbeatJson = String.format(
-                                "{\"status\": \"estoy vivo\", \"semestre\": \"%s\", \"salones\": %s, \"laboratorios\": %s}",
-                                semestre, salonesData, laboratoriosData
-                        );
-
-                        publisher.send(heartbeatJson);
-                        Thread.sleep(2000);
-                    } catch (Exception e) {
-                        System.err.println("Error leyendo archivos JSON para heartbeat: " + e.getMessage());
+                            publisher.send(heartbeatJson);
+                            Thread.sleep(2000);
+                        } catch (Exception e) {
+                            System.err.println("Error leyendo JSON en heartbeat: " + e.getMessage());
+                        }
                     }
                 }
-            }
-        });
-        heartbeatThread.start();
+            });
+            heartbeatThread.start();
 
-        // Ciclo principal del servidor
-        while (running && !Thread.currentThread().isInterrupted()) {
-            ZMQ.Poller items = ctx.createPoller(2);
-            items.register(backend, ZMQ.Poller.POLLIN);
-            if (!workerQueue.isEmpty()) {
-                items.register(frontend, ZMQ.Poller.POLLIN);
-            }
+            // Crear ROUTER para clientes
+            ZMQ.Socket frontend = ctx.createSocket(SocketType.ROUTER);
+            frontend.bind("tcp://*:5570");
 
-            if (items.poll(1000) < 0) {
-                break;
-            }
+            // Crear DEALER backend interno para workers
+            ZMQ.Socket backend = ctx.createSocket(SocketType.DEALER);
+            backend.bind("inproc://backend");
 
-            if (items.pollin(0)) {
-                // backend activity
-                String workerAddr = backend.recvStr();
-                String empty = backend.recvStr();
-                assert (empty.length() == 0);
-                String clientAddr = backend.recvStr();
+            System.out.println("Broker embebido iniciado (frontend: tcp://*:5570, backend: inproc://backend)");
 
-                if (!"READY".equals(clientAddr)) {
-                    empty = backend.recvStr();
-                    assert (empty.length() == 0);
-                    String reply = backend.recvStr();
-                    System.out.println("Enviando respuesta al cliente: " + clientAddr);
-                    frontend.sendMore(clientAddr);
-                    frontend.sendMore("");
-                    frontend.send(reply);
-                }
+            // Proxy interno (broker): conecta clientes y workers
+            ZMQ.proxy(frontend, backend, null);
 
-                // Agregar worker a la cola
-                workerQueue.add(workerAddr);
-            }
-
-            if (items.pollin(1)) {
-                // frontend activity
-                String clientAddr = frontend.recvStr();
-                String empty = frontend.recvStr();
-                assert (empty.length() == 0);
-                String request = frontend.recvStr();
-
-                String workerAddr = workerQueue.poll();
-                System.out.println("Enviando solicitud a: " + workerAddr);
-                backend.sendMore(workerAddr);
-                backend.sendMore("");
-                backend.sendMore(clientAddr);
-                backend.sendMore("");
-                backend.send(request);
-            }
+            System.out.println("Servidor detenido.");
         }
-
-        // Cierre de recursos
-        shutdown();
     }
 
-    private String leerJson(String nombreArchivo, String semestre) throws Exception {
-        java.nio.file.Path path = Paths.get("data", nombreArchivo);
-        if (!Files.exists(path)) {
+    private static String leerJson(String nombreArchivo, String semestre) throws Exception {
+        java.nio.file.Path path = java.nio.file.Paths.get("data", nombreArchivo);
+        if (!java.nio.file.Files.exists(path)) {
             Recursos.verificarSalones(semestre);
             Recursos.verificarLaboratorios(semestre);
         }
-        return new String(Files.readAllBytes(path), StandardCharsets.UTF_8);
-    }
-
-    public static void shutdown() {
-        System.out.println("Apagando servidor principal...");
-
-        running = false;
-
-        if (heartbeatThread != null && heartbeatThread.isAlive()) {
-            heartbeatThread.interrupt();
-        }
-
-        if (ctx != null && !ctx.isClosed()) {
-            ctx.close();  // Esto cierra sockets, workers e hilo poller
-        }
+        return new String(java.nio.file.Files.readAllBytes(path), java.nio.charset.StandardCharsets.UTF_8);
     }
 
     public static void main(String[] args) throws Exception {
@@ -140,8 +75,9 @@ public class Server {
             System.out.println("Modo de uso: mvn exec:java '-Dexec.mainClass=co.edu.javeriana.distribuidos.Server' '-Dexec.args=semestre'");
             return;
         }
+
         String ip = InetAddress.getLocalHost().getHostAddress();
-        System.out.println("Servidor iniciado en " + ip + "... esperando solicitudes de recursos.");
+        System.out.println("Servidor iniciado en " + ip + " con broker embebido...");
         new Server(args[0]);
     }
 }
