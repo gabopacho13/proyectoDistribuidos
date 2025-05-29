@@ -81,7 +81,7 @@ public class ClienteFacultades implements Runnable {
             String mensaje = facultad + "," + programa + "," + semestre + "," + numAulas + "," + numLaboratorios;
             System.out.println("Enviando solicitud al servidor: " + mensaje);
             boolean exito = false;
-            String[] servidores = {this.servidor, "localhost" /*"10.43.101.91"*/};
+            String[] servidores = {this.servidor, "10.43.101.91"};
             int intentos = 0;
             String respuesta = null;
 
