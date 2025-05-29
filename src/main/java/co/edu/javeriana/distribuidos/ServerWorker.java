@@ -2,71 +2,76 @@ package co.edu.javeriana.distribuidos;
 
 import co.edu.javeriana.distribuidos.Services.Aulas;
 import org.zeromq.*;
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ServerWorker implements Runnable {
 
-    private ZContext ctx;
-    private ZMQ.Socket worker;
-    private int threadNbr;
+    private final ZContext ctx;
+    private final int threadNbr;
+    private final String semestre;
 
-    public ServerWorker(ZContext ctx, int threadNbr) {
+    public ServerWorker(ZContext ctx, String semestre, int threadNbr) {
         this.ctx = ctx;
-        this.worker = ctx.createSocket(SocketType.REQ);
-        this.worker.setIdentity(("worker-" + threadNbr).getBytes(ZMQ.CHARSET));
-        this.worker.connect("inproc://backend");
-        worker.send("READY");
         this.threadNbr = threadNbr;
+        this.semestre = semestre;
     }
 
     @Override
     public void run() {
+        // Socket REQ conectado al backend del broker embebido
+        ZMQ.Socket worker = ctx.createSocket(SocketType.REQ);
+        worker.setIdentity(("worker-" + threadNbr).getBytes(ZMQ.CHARSET));
+        worker.connect("inproc://backend");
+
+        // Enviar READY para indicar que está disponible
+        worker.send("READY");
+
+        System.out.println("Worker " + threadNbr + " conectado al backend embebido (inproc://backend)");
+
         while (!Thread.currentThread().isInterrupted()) {
-            String address = worker.recvStr();
-            String empty = worker.recvStr();
-            assert (empty.isEmpty());
             String request = worker.recvStr();
-            System.out.println("El trabajador " + threadNbr + " ha recibido una solicitud...");
+            if (request == null) continue;
+
+            System.out.println("Worker " + threadNbr + " ha recibido: " + request);
 
             String[] partes = request.split(",");
             String responseContent;
 
             if (partes.length != 5) {
                 responseContent = "El mensaje no tiene el formato correcto. Se recibieron " + partes.length + " parámetros.";
-                worker.sendMore(address);
-                worker.sendMore("");
                 worker.send(responseContent);
                 continue;
             }
 
             String facultad = partes[0];
             String programa = partes[1];
-            String semestre = partes[2];
-            int numSalones = Integer.parseInt(partes[3]);
-            int numLaboratorios = Integer.parseInt(partes[4]);
+            String semestreReq = partes[2];
+            int numSalones, numLaboratorios;
 
-            if (!Recursos.verificarSalones(semestre) || !Recursos.verificarLaboratorios(semestre)) {
-                responseContent = "Ha ocurrido un error con la lectura de la base de recursos. Por favor, intente nuevamente.";
-                worker.sendMore(address);
-                worker.sendMore("");
+            try {
+                numSalones = Integer.parseInt(partes[3]);
+                numLaboratorios = Integer.parseInt(partes[4]);
+            } catch (NumberFormatException e) {
+                worker.send("Número de salones o laboratorios no es válido.");
+                continue;
+            }
+
+            if (!Recursos.verificarSalones(semestreReq) || !Recursos.verificarLaboratorios(semestreReq)) {
+                worker.send("Error en la lectura de recursos. Intente nuevamente.");
+                continue;
+            }
+
+            if (!Recursos.verificarDisponibilidad(semestreReq, numSalones - numLaboratorios, numLaboratorios)) {
+                responseContent = "No hay suficientes recursos disponibles.\n" +
+                        "Salones disponibles: " + Recursos.getSalonesDisponibles(semestreReq) + "\n" +
+                        "Laboratorios disponibles: " + Recursos.getLaboratoriosDisponibles(semestreReq);
                 worker.send(responseContent);
                 continue;
             }
 
-            if (!Recursos.verificarDisponibilidad(semestre, numSalones - numLaboratorios, numLaboratorios)) {
-                responseContent = "No hay suficientes recursos disponibles. \n" +
-                        "Número de salones disponibles: " + Recursos.getSalonesDisponibles(semestre) + "\n" +
-                        "Número de laboratorios disponibles: " + Recursos.getLaboratoriosDisponibles(semestre);
-                worker.sendMore(address);
-                worker.sendMore("");
-                worker.send(responseContent);
-                continue;
-            }
-
-            List<Salon> salonesReservados = Recursos.reservarSalones(numSalones - numLaboratorios, facultad, programa, semestre);
-            List<Aula> laboratoriosReservados = Recursos.reservarLaboratorios(numLaboratorios, facultad, programa, semestre);
+            List<Salon> salonesReservados = Recursos.reservarSalones(numSalones - numLaboratorios, facultad, programa, semestreReq);
+            List<Aula> laboratoriosReservados = Recursos.reservarLaboratorios(numLaboratorios, facultad, programa, semestreReq);
 
             if (laboratoriosReservados != null && salonesReservados != null) {
                 List<Salon> salonesLaboratorios = new ArrayList<>();
@@ -76,51 +81,52 @@ public class ServerWorker implements Runnable {
                         salonesLaboratorios.add((Salon) laboratorio);
                     }
                 }
-                for (Salon salon : salonesLaboratorios) {
-                    laboratoriosReservados.remove(salon);
-                }
+                laboratoriosReservados.removeAll(salonesLaboratorios);
                 responseContent = getString(salonesReservados, laboratoriosReservados);
             } else {
                 responseContent = "";
                 if (salonesReservados == null) {
-                    responseContent += "No hay suficientes salones disponibles. \n";
+                    responseContent += "No hay suficientes salones disponibles.\n";
                 }
                 if (laboratoriosReservados == null) {
-                    responseContent += "No hay suficientes laboratorios disponibles. \n";
+                    responseContent += "No hay suficientes laboratorios disponibles.\n";
                 }
-                responseContent += "Se ha cancelado la reserva. Intente nuevamente.\n";
-                responseContent += "Número de salones disponibles: " + Recursos.getSalonesDisponibles(semestre) + "\n";
-                responseContent += "Número de laboratorios disponibles: " + Recursos.getLaboratoriosDisponibles(semestre);
+                responseContent += "Se canceló la reserva.\n" +
+                        "Salones disponibles: " + Recursos.getSalonesDisponibles(semestreReq) + "\n" +
+                        "Laboratorios disponibles: " + Recursos.getLaboratoriosDisponibles(semestreReq);
             }
 
-            worker.sendMore(address);
-            worker.sendMore("");
             worker.send(responseContent);
         }
-        ctx.destroy();
+
+        worker.close();
     }
 
     private static String getString(List<Salon> salonesReservados, List<Aula> laboratoriosReservados) {
         List<Salon> laboratoriosAmbulatorios = new ArrayList<>();
-        StringBuilder responseContent = new StringBuilder("Se le han reservado los salones:\n");
+        StringBuilder response = new StringBuilder("Se han reservado los salones:\n");
+
         for (Salon salon : salonesReservados) {
-            responseContent.append(salon.getId()).append(" ");
+            response.append(salon.getId()).append(" ");
             if (salon.getEsLaboratorio()) {
                 laboratoriosAmbulatorios.add(salon);
             }
         }
+
         if (!laboratoriosAmbulatorios.isEmpty()) {
-            responseContent.append("\nLos siguientes salones se han reservado como laboratorios:\n");
+            response.append("\nLos siguientes salones se reservaron como laboratorios:\n");
             for (Salon laboratorio : laboratoriosAmbulatorios) {
-                responseContent.append(laboratorio.getId()).append(" ");
+                response.append(laboratorio.getId()).append(" ");
             }
         }
+
         if (!laboratoriosReservados.isEmpty()) {
-            responseContent.append("\nSe le han reservado los laboratorios:\n");
-            for (Aula laboratorio : laboratoriosReservados) {
-                responseContent.append(laboratorio.getId()).append(" ");
+            response.append("\nSe reservaron los laboratorios:\n");
+            for (Aula lab : laboratoriosReservados) {
+                response.append(lab.getId()).append(" ");
             }
         }
-        return responseContent.toString();
+
+        return response.toString();
     }
 }
