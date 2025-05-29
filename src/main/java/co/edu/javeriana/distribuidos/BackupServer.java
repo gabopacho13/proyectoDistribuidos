@@ -15,7 +15,7 @@ public class BackupServer {
         try (ZContext ctx = new ZContext()) {
             // Socket para recibir heartbeat
             Socket subscriber = ctx.createSocket(SocketType.SUB);
-            subscriber.connect("tcp://" + ipServidor + ":5572"); // PONER IP  del servidor principal
+            subscriber.connect("tcp://" + ipServidor + ":5590"); // PONER IP  del servidor principal
             subscriber.subscribe("");
             String semestre = "2023-2"; // Asignar semestre por defecto, se puede modificar según necesidad
 

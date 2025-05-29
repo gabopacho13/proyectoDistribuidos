@@ -122,7 +122,7 @@ public class Aulas {
         lock.lock();
         try {
             if (numSalones > salonesDisponibles(semestre)) {
-                return null;
+                return new ArrayList<>();
             }
             InputStream inputStream = new FileInputStream("data/Salones" + semestre + ".json");
             BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));

@@ -4,6 +4,7 @@ import co.edu.javeriana.distribuidos.Services.ProgramasPorFacultad;
 import org.zeromq.*;
 
 import java.nio.charset.StandardCharsets;
+import java.util.Objects;
 
 public class ClienteFacultades implements Runnable {
 
@@ -12,17 +13,19 @@ public class ClienteFacultades implements Runnable {
     private String servidor;
     private ZContext ctx;
     private ZMQ.Socket escuchaProgramas;
+    private int finPuerto;
 
     private ZMQ.Socket client;  
 
-    public ClienteFacultades(String facultad, String semestre, String servidor) {
+    public ClienteFacultades(String facultad, String semestre, String servidor, int finPuerto) {
         this.facultad = facultad;
         this.semestre = semestre;
         this.servidor = servidor;
+        this.finPuerto = finPuerto;
         this.ctx = new ZContext();
 
         this.escuchaProgramas = ctx.createSocket(SocketType.REP);
-        this.escuchaProgramas.bind("tcp://*:5571");
+        this.escuchaProgramas.bind("tcp://*:55" + finPuerto);
 
         this.client = ctx.createSocket(SocketType.REQ);
         this.client.connect("tcp://" + servidor + ":5570");  // conecta al ROUTER del servidor
@@ -30,7 +33,7 @@ public class ClienteFacultades implements Runnable {
 
     @Override
     public void run() {
-        System.out.println("Facultad " + facultad + " conectada a " + servidor + ":5570 y escuchando en 5571.");
+        System.out.println("Facultad " + facultad + " conectada a " + servidor + ":5570 y escuchando en 55" + finPuerto + "...");
         while (!Thread.currentThread().isInterrupted()) {
             System.out.println("Esperando solicitudes...");
             byte[] data = escuchaProgramas.recv(0);
@@ -128,25 +131,41 @@ public class ClienteFacultades implements Runnable {
 
     public static void main(String[] args) {
         if (args.length < 3){
-            System.out.println("modo de uso: mvn exec:java '-Dexec.mainClass=co.edu.javeriana.distribuidos.ClienteFacultades' '-Dexec.args=facultad semestre ipServidor'");
+            System.out.println("modo de uso: mvn exec:java '-Dexec.mainClass=co.edu.javeriana.distribuidos.ClienteFacultades' '-Dexec.args=facultad(separar palabras por \"_\") semestre ipServidor'");
             return;
         }
         String facultad = args[0];
         String semestre = args[1];
         String servidor = args[2];
 
-        if (!ProgramasPorFacultad.buscarFacultad(facultad.toLowerCase())) {
+        if (Objects.equals(facultad, "todas")){
+            int cont = 71;
+            for (String f : ProgramasPorFacultad.getFacultades()) {
+                Thread clienteThread = new Thread(new ClienteFacultades(f, semestre, servidor, cont));
+                clienteThread.start();
+                cont++;
+                /*try {
+                    clienteThread.join();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }*/
+            }
+        }
+        else if (!ProgramasPorFacultad.buscarFacultad(facultad.toLowerCase())) {
             System.out.println("Facultad no válida: " + facultad);
             return;
         }
+        else {
+            // Crear un nuevo hilo para el cliente
+            Thread clienteThread = new Thread(new ClienteFacultades(facultad, semestre, servidor, 71));
+            clienteThread.start();
 
-        Thread clienteThread = new Thread(new ClienteFacultades(facultad, semestre, servidor));
-        clienteThread.start();
-
-        try {
-            clienteThread.join();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+            // Esperar a que el hilo termine
+            try {
+                clienteThread.join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 }

@@ -1,8 +1,10 @@
 package co.edu.javeriana.distribuidos;
 
+import co.edu.javeriana.distribuidos.Services.ProgramasPorFacultad;
 import org.zeromq.*;
 
 import java.nio.charset.StandardCharsets;
+import java.util.List;
 
 public class ClienteProgramas implements Runnable{
 
@@ -11,20 +13,22 @@ public class ClienteProgramas implements Runnable{
     private int numAulas;
     private int numLaboratorios;
     private String ipFacultad;
+    private int finPuerto;
 
-    public ClienteProgramas(String programa, String semestre, int numAulas, int numLaboratorios, String ipFacultad) {
+    public ClienteProgramas(String programa, String semestre, int numAulas, int numLaboratorios, String ipFacultad, int finPuerto) {
         this.programa = programa;
         this.semestre = semestre;
         this.numAulas = numAulas;
         this.numLaboratorios = numLaboratorios;
         this.ipFacultad = ipFacultad;
+        this.finPuerto = finPuerto;
     }
 
     @Override
     public void run(){
         try (ZContext context = new ZContext()) {
             ZMQ.Socket requester = context.createSocket(SocketType.REQ);
-            requester.connect("tcp://" + ipFacultad + ":5571");
+            requester.connect("tcp://" + ipFacultad + ":55" + finPuerto);
             System.out.println("la conexión con la facultad se ha realizado satisfactoriamente. Solicitando salones...");
 
             String mensaje = programa + "," + semestre + "," + numAulas + "," + numLaboratorios;
@@ -73,16 +77,35 @@ public class ClienteProgramas implements Runnable{
             return;
         }
         String ipFacultad = args[4];
+        if (programa.equals("todos")){
+            List<List<String>> programasPorFacultad = ProgramasPorFacultad.getProgramasPorFacultad();
+            for (int i = 0; i < programasPorFacultad.size(); i++) {
+                List<String> facultadProgramas = programasPorFacultad.get(i);
+                for (String programaActual : facultadProgramas) {
+                    System.out.println("Solicitando salones para el programa: " + programaActual);
+                    // Crear un nuevo hilo para cada programa
+                    Thread clienteThread = new Thread(new ClienteProgramas(programaActual, semestre, numAulas, numLaboratorios, ipFacultad, i + 71));
+                    clienteThread.start();
+                    /*
+                    // Esperar a que el hilo termine
+                    try {
+                        clienteThread.join();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }*/
+                }
+            }
+        }else {
+            // Crear un nuevo hilo para el cliente
+            Thread clienteThread = new Thread(new ClienteProgramas(programa, semestre, numAulas, numLaboratorios, ipFacultad, 71));
+            clienteThread.start();
 
-        // Crear un nuevo hilo para el cliente
-        Thread clienteThread = new Thread(new ClienteProgramas(programa, semestre, numAulas, numLaboratorios, ipFacultad));
-        clienteThread.start();
-
-        // Esperar a que el hilo termine
-        try {
-            clienteThread.join();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+            // Esperar a que el hilo termine
+            try {
+                clienteThread.join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
